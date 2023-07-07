@@ -61,12 +61,4 @@ return require('packer').startup(function(use)
     use { "jose-elias-alvarez/null-ls.nvim" }
     use { 'wakatime/vim-wakatime' }
     use { "folke/todo-comments.nvim", requires = { "nvim-lua/plenary.nvim" } }
-
-    -- TODO: ADD PACKAGES
-    -- https://github.com/NTBBloodbath/galaxyline.nvim
-    -- https://github.com/yamatsum/nvim-nonicons
-    use {
-        'yamatsum/nvim-nonicons',
-        requires = { 'kyazdani42/nvim-web-devicons' }
-    }
 end)
