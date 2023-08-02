@@ -1,5 +1,5 @@
-vim.opt.list = true
-vim.opt.listchars = ""
+vim.opt.list = false
+-- vim.opt.listchars = ""
 -- vim.opt.listchars:append "space:⋅"
 -- vim.opt.listchars:append "eol:↴"
 

@@ -1,12 +1,12 @@
 vim.g.mapleader = " "
 
 local function map(mode, lhs, rhs, opts)
-  opts = opts or {}
-  opts.silent = opts.silent ~= false
-  if opts.remap and not vim.g.vscode then
-    opts.remap = nil
-  end
-  vim.keymap.set(mode, lhs, rhs, opts)
+	opts = opts or {}
+	opts.silent = opts.silent ~= false
+	if opts.remap and not vim.g.vscode then
+		opts.remap = nil
+	end
+	vim.keymap.set(mode, lhs, rhs, opts)
 end
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
@@ -33,4 +33,5 @@ map("n", "<leader>w|", "<C-W>v", { desc = "Split window right", remap = true })
 map("n", "<leader>-", "<C-W>s", { desc = "Split window below", remap = true })
 map("n", "<leader>|", "<C-W>v", { desc = "Split window right", remap = true })
 
-
+vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
+vim.keymap.set("n", "<leader>gof", "<cmd>CellularAutomaton game_of_life<CR>");
