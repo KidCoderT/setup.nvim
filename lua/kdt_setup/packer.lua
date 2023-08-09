@@ -55,8 +55,9 @@ return require('packer').startup(function(use)
 	-- From Craftzdog
 	use 'windwp/nvim-autopairs'
 	use 'windwp/nvim-ts-autotag'
-	use 'akinsho/nvim-bufferline.lua'
+	-- use 'akinsho/nvim-bufferline.lua'
 	use 'nvim-lualine/lualine.nvim'
+	use('MunifTanjim/prettier.nvim')
 
 	-- For myself
 	use { 'norcalli/nvim-colorizer.lua' }

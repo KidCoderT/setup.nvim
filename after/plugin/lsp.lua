@@ -7,7 +7,8 @@ lsp.ensure_installed({
     'lua_ls',
     'html',
     'pyright',
-    "gopls"
+    "gopls",
+	'tsserver',
 })
 
 -- Fix Undefined global 'vim'
@@ -88,7 +89,7 @@ lsp.format_on_save({
         ['lua_ls'] = { 'lua' },
         ['rust_analyzer'] = { 'rust' },
         ['html'] = { 'html' },
-        ['null-ls'] = { 'python' },
+        ['null-ls'] = { 'python', "css", "javascript", "javascriptreact", "typescript", "typescriptreact", "json" },
     }
 })
 
