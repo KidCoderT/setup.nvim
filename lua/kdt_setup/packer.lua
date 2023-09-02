@@ -53,15 +53,17 @@ return require('packer').startup(function(use)
 	use { 'tpope/vim-fugitive' }
 
 	-- From Craftzdog
-	use 'windwp/nvim-autopairs'
-	use 'windwp/nvim-ts-autotag'
+	use { 'windwp/nvim-autopairs' }
+	use { 'windwp/nvim-ts-autotag' }
 	-- use 'akinsho/nvim-bufferline.lua'
-	use 'nvim-lualine/lualine.nvim'
-	use('MunifTanjim/prettier.nvim')
+	use { 'nvim-lualine/lualine.nvim' }
+	-- use { 'MunifTanjim/prettier.nvim' }
+	use { 'kyazdani42/nvim-web-devicons' }
+	-- use { 'jose-elias-alvarez/typescript.nvim' }
 
 	-- For myself
 	use { 'norcalli/nvim-colorizer.lua' }
-	use "lukas-reineke/indent-blankline.nvim"
+	use { "lukas-reineke/indent-blankline.nvim" }
 	use {
 		'numToStr/Comment.nvim',
 		requires = { 'JoosepAlviste/nvim-ts-context-commentstring' },
@@ -72,5 +74,5 @@ return require('packer').startup(function(use)
 	use { "jose-elias-alvarez/null-ls.nvim" }
 	use { 'wakatime/vim-wakatime' }
 	use { "folke/todo-comments.nvim", requires = { "nvim-lua/plenary.nvim" } }
-	use("eandrju/cellular-automaton.nvim")
+	use { "eandrju/cellular-automaton.nvim" }
 end)
