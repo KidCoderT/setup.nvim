@@ -62,6 +62,8 @@ return require('packer').startup(function(use)
 	-- use { 'jose-elias-alvarez/typescript.nvim' }
 
 	-- For myself
+	use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons' }, }
+
 	use { 'norcalli/nvim-colorizer.lua' }
 	use { "lukas-reineke/indent-blankline.nvim" }
 	use {
@@ -75,4 +77,9 @@ return require('packer').startup(function(use)
 	use { 'wakatime/vim-wakatime' }
 	use { "folke/todo-comments.nvim", requires = { "nvim-lua/plenary.nvim" } }
 	use { "eandrju/cellular-automaton.nvim" }
+
+	use { "folke/neodev.nvim" }
+	use { "MunifTanjim/nui.nvim" }
+
+	-- use { "~/Appdata/Local/nvim/plugin/cusor.nvim" }
 end)
